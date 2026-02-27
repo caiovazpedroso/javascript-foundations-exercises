@@ -1,9 +1,11 @@
 const convertToCelsius = function(x) {
-  return x * 9/5 + 32
+  let y = (x - 32) * 5/9
+  return Number(Number.parseFloat(y).toFixed(1))
 };
 
 const convertToFahrenheit = function(x) {
-  return (x - 32) * 5/9
+  let y = x * 9/5 + 32
+  return Number(Number.parseFloat(y).toFixed(1))
 };
 
 // Do not edit below this line
