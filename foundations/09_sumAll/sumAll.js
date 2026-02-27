@@ -1,9 +1,6 @@
 const sumAll = function(a, b) {
     let total = min = max = 0
-    if ((a < 0 || b < 0 )||(typeof a != "number" || typeof b != "number")) {
-        return 'ERROR'
-    }
-    if (Number.isInteger(a) == false || Number.isInteger(b) == false) {
+    if ((a < 0 || b < 0 )||(Number.isInteger(a) == false || Number.isInteger(b) == false)) {
         return 'ERROR'
     }
     if (a > b) {
